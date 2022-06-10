@@ -1,3 +1,7 @@
+![image](https://user-images.githubusercontent.com/67467239/172971340-688e98a8-ee8b-4e60-aeb1-f630ba29c71f.png)
+
+
+
 # Guia de estilos
 
 Toda a estilização que será usada no projeto dentro do figma.
