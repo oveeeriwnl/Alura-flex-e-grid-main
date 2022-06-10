@@ -1,0 +1,74 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15191c;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  }
+  
+  .cabecalho__perfil {
+    display: none;
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .cabecalho {
+      background-color: #1d232a;
+      display: grid;
+      column-gap: 32px;
+      grid-template-columns: 1fr auto;
+      padding: 16px 60px;
+      height: 80px;
+      box-sizing: border-box;
+      grid-column: 2;
+    }
+  
+    .cabecalho__menu {
+      display: none;
+    }
+  
+    .cabecalho__logo {
+      display: none;
+    }
+  
+    .cabecalho__perfil {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      column-gap: 8px;
+      align-items: center;
+      justify-self: flex-end;
+      color: #95999c;
+      padding: 8px 32px;
+      border-right: 1px solid #95999c;
+    }
+  
+    .cabecalho__perfil::before {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-image: url(../../img/profile_2.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  
+    .cabecalho__perfil::after {
+      content: "\e90d";
+      color: #ffffff;
+      font-size: 1.5rem;
+    }
+  }
+  
+  .cabecalho__menu i::before {
+    content: "\e904";
+    font-size: 24px;
+  }
+  
+  .cabecalho__notificacao i::before {
+    content: "\e906";
+    font-size: 24px;
+  }
+  
+  .cabecalho__logo {
+    width: 40px;
+  }
